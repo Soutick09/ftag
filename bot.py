@@ -15,4 +15,6 @@ async def start(client, message):
 async def tag(client, message):
     await message.copy(message.chat.id)
 
+await message.delete()
+                       
 app.run()
